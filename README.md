@@ -4,6 +4,6 @@ A terminal based puzzle game written in c using ncurses based on [enclose.horse]
 
 ## Controls
 
-- **q** - exit
+- **q** - Exit
 - **Arrow Keys** - Move cursor
 - **Space** - Place wall
