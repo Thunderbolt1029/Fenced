@@ -1,7 +1,7 @@
 .POSIX:
 CC     = gcc
 CFLAGS = -W -O
-LDLIBS = -lm -lncurses
+LDLIBS = -lncurses
 
 EXEC = fenced
 
@@ -14,7 +14,7 @@ OBJ_FILES := $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
 all: $(EXEC)
 
 $(EXEC): $(OBJ_FILES)
-	$(CC) $(LDFLAGS) $(LDLIBS) -o $@ $^ 
+	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) -c -o $@ $^

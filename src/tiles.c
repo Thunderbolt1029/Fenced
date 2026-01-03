@@ -9,8 +9,8 @@
 #define GRN "\e[0;32m"
 
 void printTiles(Tile **tiles, int tileSize) {
-    for (int x = 0; x < tileSize; x++) {
-        for (int y = 0; y < tileSize; y++) {
+    for (int y = 0; y < tileSize; y++) {
+        for (int x = 0; x < tileSize; x++) {
             switch (tiles[x][y])
             {
             case EMPTY:
